@@ -10,20 +10,23 @@
 <body>
     <label for="code-length">Password length: </label>
     <input id="code-length" type="number">
-    
-    <input type="checkbox" name="to-include" id="lowercase" checked>
-    <label for="lowercase"> Lowercase </label>
-
-    <input type="checkbox" name="to-include" id="uppercase">
-    <label for="uppercase"> Uppercase </label>
-
-    <input type="checkbox" name="to-include" id="numbers">
-    <label for="numbers"> Numbers </label>
-
-    <input type="checkbox" name="to-include" id="symbols">
-    <label for="symbols"> Symbols </label>
-
-    <input type="button" value="Generate" onclick="getRandomCode()">
+    <fieldset>
+        <legend>
+            <input type="checkbox" name="to-include" id="lowercase" checked>
+            <label for="lowercase"> Lowercase </label>
+            <br>
+            <input type="checkbox" name="to-include" id="uppercase">
+            <label for="uppercase"> Uppercase </label>
+            <br>
+            <input type="checkbox" name="to-include" id="numbers">
+            <label for="numbers"> Numbers </label>
+            <br>
+            <input type="checkbox" name="to-include" id="symbols">
+            <label for="symbols"> Symbols </label>
+            <br>
+            <input type="button" value="Generate" onclick="getRandomCode()">
+        </legend>
+    </fieldset>
     <h3>Your random password is: </h3>
         <p id="return-value"></p>
     <script src="script.js"></script>
