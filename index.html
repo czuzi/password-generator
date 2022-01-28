@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="code-length">Password length: </label>
+    <input id="code-length" type="number">
+    
+    <input type="checkbox" name="to-include" id="lowercase" checked>
+    <label for="lowercase"> Lowercase </label>
+
+    <input type="checkbox" name="to-include" id="uppercase">
+    <label for="uppercase"> Uppercase </label>
+
+    <input type="checkbox" name="to-include" id="numbers">
+    <label for="numbers"> Numbers </label>
+
+    <input type="checkbox" name="to-include" id="symbols">
+    <label for="symbols"> Symbols </label>
+
+    <input type="button" value="Generate" onclick="getRandomCode()">
+    <h3>Your random password is: </h3>
+        <p id="return-value"></p>
+    <script src="script.js"></script>
+</body>
+</html>
